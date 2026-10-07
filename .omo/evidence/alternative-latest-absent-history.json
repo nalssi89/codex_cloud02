@@ -1,0 +1,27 @@
+{
+  "scope": "Rootactualjointauditlatestexcludedcomponentledger; not station missingness",
+  "case_ids": [
+    "20260831_1MON_W06_prcp",
+    "20260831_1MON_W06_t15m",
+    "20260831_1MON_W07_prcp",
+    "20260831_1MON_W07_t15m",
+    "20260831_1MON_W08_prcp",
+    "20260831_1MON_W08_t15m",
+    "20260831_3MON_M02_prcp",
+    "20260831_3MON_M02_t15m",
+    "20260831_3MON_M03_prcp",
+    "20260831_3MON_M03_t15m",
+    "20260831_3MON_M04_prcp",
+    "20260831_3MON_M04_t15m",
+    "20260831_3MON_M05_prcp",
+    "20260831_3MON_M05_t15m",
+    "20260831_3MON_M06_prcp",
+    "20260831_3MON_M06_t15m"
+  ],
+  "reason": "TARGET_UNAVAILABLE_COMPONENT_NO_ELIGIBLE_HISTORY",
+  "keep_in_full_case_ledger": true,
+  "invocation": ".venv/Scripts/python.exe -B -m analysis.alternative_joint_audit --actual",
+  "exit_code": 0,
+  "elapsed_seconds": 53.39711460000035,
+  "monitor": "mon_HAZFCC8YEAHMDC0X"
+}

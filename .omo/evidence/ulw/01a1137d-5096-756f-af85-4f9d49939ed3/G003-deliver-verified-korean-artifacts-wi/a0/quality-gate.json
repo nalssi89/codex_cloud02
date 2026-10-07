@@ -1,0 +1,169 @@
+{
+  "manualQa": {
+    "by": "main-session",
+    "status": "passed",
+    "evidence": "Lead personally executed and viewed final real-browser report surfaces; official validators and native Korean proofreading passed; qa-verdict.md has exact invocations, observations and cleanup.",
+    "surfaceEvidence": [
+      {
+        "id": "desktop-browser",
+        "criterionRef": "C001",
+        "surface": "browser",
+        "invocation": "OwnedChrome1280x900openreportandnativeSource6/ProjectP1clicks",
+        "verdict": "passed",
+        "artifactRefs": [
+          "desktop-pixels",
+          "source-nav",
+          "project-nav"
+        ]
+      },
+      {
+        "id": "mobile-browser",
+        "criterionRef": "C002",
+        "surface": "browser",
+        "invocation": "OwnedChrome390x844light/darkactualreportinspection",
+        "verdict": "passed",
+        "artifactRefs": [
+          "mobile-pixels"
+        ]
+      },
+      {
+        "id": "content-data",
+        "criterionRef": "C002",
+        "surface": "data",
+        "invocation": "RealDOMofficiallayoutprobeand367blocksemanticscomparison",
+        "verdict": "passed",
+        "artifactRefs": [
+          "mobile-layout",
+          "copy-data"
+        ]
+      },
+      {
+        "id": "manifest-cli",
+        "criterionRef": "C003",
+        "surface": "cli",
+        "invocation": "node report-tools.mjs outcome verify --session-dir research_bias_correction/20261007-002200/",
+        "verdict": "passed",
+        "artifactRefs": [
+          "cli-proof"
+        ]
+      }
+    ],
+    "adversarialCases": [
+      {
+        "id": "fragment-case-regression",
+        "criterionRef": "C001",
+        "scenario": "19uppercasefragmentlinkstolowercaseIDsinitiallyfailed",
+        "expectedBehavior": "allrealcitationtargetsresolve andclickedreferenceisvisible",
+        "verdict": "passed",
+        "artifactRefs": [
+          "source-nav",
+          "project-nav"
+        ]
+      },
+      {
+        "id": "mobile-overflow",
+        "criterionRef": "C002",
+        "scenario": "17methodrowsandlongsourceURLsunder390px,includingdarkmode",
+        "expectedBehavior": "nohorizontalbodyoverflow/overlap/clipping;alltextretained",
+        "verdict": "passed",
+        "artifactRefs": [
+          "mobile-pixels",
+          "mobile-layout",
+          "copy-data"
+        ]
+      },
+      {
+        "id": "false-completion",
+        "criterionRef": "C003",
+        "scenario": "Failedretrievals,unmeasuredKoreanskill,liveprofiles orunresolvedlanguageerrorsmustnotbesoldascomplete",
+        "expectedBehavior": "scope-qualifiedmethodclaims,allinitiallanguageitemsresolved,28tasksterminal/profilesgone",
+        "verdict": "passed",
+        "artifactRefs": [
+          "cli-proof"
+        ]
+      }
+    ],
+    "artifactRefs": [
+      {
+        "id": "desktop-pixels",
+        "kind": "screenshot",
+        "description": "ActualfinaldesktopBJP1280capture,byteidenticalcopy",
+        "path": ".omo/evidence/ulw/01a1137d-5096-756f-af85-4f9d49939ed3/G003-deliver-verified-korean-artifacts-wi/a0/desktop.png"
+      },
+      {
+        "id": "mobile-pixels",
+        "kind": "screenshot",
+        "description": "Actualfinal390darkTweediecapture,byteidenticalcopy",
+        "path": ".omo/evidence/ulw/01a1137d-5096-756f-af85-4f9d49939ed3/G003-deliver-verified-korean-artifacts-wi/a0/mobile.png"
+      },
+      {
+        "id": "source-nav",
+        "kind": "screenshot",
+        "description": "ActualSource6clickedreferencevisible",
+        "path": ".omo/evidence/ulw/01a1137d-5096-756f-af85-4f9d49939ed3/G003-deliver-verified-korean-artifacts-wi/a0/source-navigation.png"
+      },
+      {
+        "id": "project-nav",
+        "kind": "screenshot",
+        "description": "ActualProjectP1clickedreferencevisible",
+        "path": ".omo/evidence/ulw/01a1137d-5096-756f-af85-4f9d49939ed3/G003-deliver-verified-korean-artifacts-wi/a0/project-navigation.png"
+      },
+      {
+        "id": "mobile-layout",
+        "kind": "data-diff",
+        "description": "Actualfinalmobilegeometry278untruncatedboxes",
+        "path": ".omo/evidence/ulw/01a1137d-5096-756f-af85-4f9d49939ed3/G003-deliver-verified-korean-artifacts-wi/a0/boxes-mobile.json"
+      },
+      {
+        "id": "copy-data",
+        "kind": "data-diff",
+        "description": "Actual367expected/actualblockcomparison0missing",
+        "path": ".omo/evidence/ulw/01a1137d-5096-756f-af85-4f9d49939ed3/G003-deliver-verified-korean-artifacts-wi/a0/content-copy.txt"
+      },
+      {
+        "id": "cli-proof",
+        "kind": "cli-transcript",
+        "description": "ActualnodeCLIverifyexit0decisivelog",
+        "path": ".omo/evidence/ulw/01a1137d-5096-756f-af85-4f9d49939ed3/G003-deliver-verified-korean-artifacts-wi/a0/cli-transcript.txt"
+      }
+    ]
+  },
+  "gateReview": {
+    "by": "category:deep-low",
+    "recommendation": "APPROVE",
+    "reportPath": ".omo/evidence/ulw/01a1137d-5096-756f-af85-4f9d49939ed3/G003-deliver-verified-korean-artifacts-wi/a0/gate-review.md",
+    "evidence": "Actualindependentreviewtaskst_01a113d1APPROVE/C1–C5met/noblockers. Itreadreport/evidence,checked17rows/93IDs/URLcoverage/fragmentintegrity andviewedactualrepresentativepixels;didnotclaimnewfitsorQAreruns.",
+    "blockers": [],
+    "notes": [
+      "Unknownlocalperformance/memberidentity/archive-rowmappingremainexplicitscopedlimits,notclaimedverified.",
+      "29totalworkersnowterminal;bothteamsandownedprofiles/processesclosed."
+    ]
+  },
+  "iteration": {
+    "fullRerun": true,
+    "status": "passed",
+    "rerunCommands": [
+      "functions.lsp_diagnostics({filePath:report.html})",
+      "rtools.runCheck([report.html,\"--design-spec\",design-spec.md,\"--layout\",boxes.json])",
+      "rtools.runCheck([report.html,\"--design-spec\",design-spec.md,\"--layout\",boxes-mobile.json])",
+      "RealChrome1280/390affectedparagraphrerender+all367semanticblocks;nativeKorean4-itemdeltareview",
+      "node report-tools.mjs outcome verify --session-dir research_bias_correction/20261007-002200/"
+    ],
+    "evidence": "Finalchecks0defects/exit0afterfour-lineproofreadingdelta;allaffectedpixelsviewed;unchangedsyntheticmechanismproofsretainvalidity;no productiontest/build claimed."
+  },
+  "criteriaCoverage": {
+    "totalCriteria": 9,
+    "passCount": 9,
+    "originalIntent": "Find otherbias-correctionmethods beyondQM/QDM/EMOS,includingJointGaussian,forcurrentGloSea6temperature/precipitation;pros/consandprojectapplicability,inaseparatedirectory.",
+    "desiredOutcome": "KoreanMarkdown/HTMLcomparisonwith17method/extensionrows,93sourceURLs,dataconstraintsandprioritizedexperiments;noinventedlocalperformancegains.",
+    "userOutcomeReview": "Deliverableiscomplete/readable/actionable:conditionalBJP/shrinkage/rain-distributionmenu,dependenceandMLgates,allrequestedpros/consandseparatedartifacts.Pixels/linkbehavior/wholecontentverified,workersterminal,cleanupcomplete.",
+    "adversarialClassesCovered": [
+      "provenance/availability",
+      "small-sample/non-independentmembers",
+      "zero/support/tails",
+      "sourceidentity/citation",
+      "responsiveoverflow/fragmentcase",
+      "falseefficacy/falsecompletion"
+    ]
+  }
+}

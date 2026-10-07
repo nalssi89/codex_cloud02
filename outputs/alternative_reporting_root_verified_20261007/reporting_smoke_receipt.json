@@ -1,0 +1,20 @@
+{
+  "actual_cases": 244,
+  "actual_years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "arithmetic": {
+    "independent_arithmetic_assertions": 13,
+    "status": "PASS"
+  },
+  "byte_deterministic_report_files": 41,
+  "protected_files_unchanged": 60,
+  "real_baseline_rows": 960,
+  "report_status": "INCOMPLETE",
+  "scope": "REPORTING_SMOKE_NOT_FULL",
+  "status": "PASS"
+}

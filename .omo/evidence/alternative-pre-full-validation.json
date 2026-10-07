@@ -1,0 +1,640 @@
+{
+  "validator_version": "independent-alternative-v1",
+  "status": "INCOMPLETE",
+  "full_experiment_validated": false,
+  "root": "D:\\WORK\\Projects\\omo\\Glosea6",
+  "output": "D:\\WORK\\Projects\\omo\\Glosea6\\outputs\\alternative_comparison",
+  "checks": [
+    {
+      "check": "protected_60_before",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "files_checked": 60,
+        "failures": []
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 3.1521730000022217
+    },
+    {
+      "check": "independent_known_laws",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "known_normal_crps": 0.23369497725510913,
+        "mixture_crps": 0.7343976021023053,
+        "incorrect_component_average": 1.4527918216859033,
+        "tweedie_atom": 0.17692120631776423,
+        "tweedie_mean": 2.999999999999999,
+        "checks": 12
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.035398599997279234
+    },
+    {
+      "check": "independent_calendar_leap_year_guards",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "weekly": "SEVEN_DAYS",
+        "monthly": "INDIVIDUAL_CALENDAR_MONTH",
+        "leap_day": "RETAINED"
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 4.2499999835854396e-05
+    },
+    {
+      "check": "SC2_independent_expected_reference_json",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "formulas": "SCIPY_CDF_QUADRATURE_AND_O_N_SQUARED_EXPECTATION",
+        "expected_not_copied_from_production_scores": {
+          "normal": {
+            "distribution_spec": {
+              "tag": "normal",
+              "parameters": [
+                0.0,
+                1.0
+              ],
+              "censor_zero": false
+            },
+            "observation": 1.0,
+            "expected_mean": 0.0,
+            "expected_crps": 0.6024413576276163,
+            "expected_cdf_at_zero": 0.5
+          },
+          "censored_normal": {
+            "distribution_spec": {
+              "tag": "normal",
+              "parameters": [
+                -2.0,
+                1.0
+              ],
+              "censor_zero": true
+            },
+            "observation": 1.0,
+            "expected_mean": 0.008490702616829627,
+            "expected_crps": 0.9838848049420288,
+            "expected_cdf_at_zero": 0.9772498680518208
+          },
+          "weighted_ties": {
+            "distribution_spec": {
+              "tag": "weighted_empirical",
+              "values": [
+                0.0,
+                2.0,
+                5.0
+              ],
+              "weights": [
+                0.3,
+                0.3,
+                0.4
+              ]
+            },
+            "observation": 1.0,
+            "expected_mean": 2.6,
+            "expected_crps": 1.0600000000000003,
+            "expected_cdf_at_zero": 0.3
+          },
+          "mixture": {
+            "distribution_spec": {
+              "tag": "mixture",
+              "parts": [
+                {
+                  "tag": "normal",
+                  "parameters": [
+                    -2.0,
+                    1.0
+                  ],
+                  "censor_zero": false
+                },
+                {
+                  "tag": "normal",
+                  "parameters": [
+                    2.0,
+                    1.0
+                  ],
+                  "censor_zero": false
+                }
+              ],
+              "weights": [
+                0.5,
+                0.5
+              ]
+            },
+            "observation": 1.0,
+            "expected_mean": 0.0,
+            "expected_crps": 0.8011138217733788,
+            "expected_cdf_at_zero": 0.5
+          },
+          "sqrt_inverse": {
+            "distribution_spec": {
+              "tag": "power_censored",
+              "base": {
+                "tag": "normal",
+                "parameters": [
+                  0.0,
+                  1.0
+                ],
+                "censor_zero": false
+              },
+              "power": 0.5,
+              "unit_scale": 100.0
+            },
+            "observation": 1.0,
+            "expected_mean": 50.00000000000504,
+            "expected_crps": 9.137644859499217,
+            "expected_cdf_at_zero": 0.5
+          }
+        }
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.15904459999728715
+    },
+    {
+      "check": "prototype_schema_roundtrip_adversarial",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "adversarial_rejections": 7,
+        "CSV_JSON_roundtrips": 2,
+        "training_hash_replayed": "76f7c0488e4469796bc310b07fde2677059d689727addbfb7da24e04e6731c0c",
+        "scope": "SYNTHETIC_SCHEMA_ONLY_NOT_FULL_EXPERIMENT"
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.007051399999909336
+    },
+    {
+      "check": "independent_joint_energy_events",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "independent_energy": 0.8535533905932737,
+        "correlated_energy": 0.7071067811865476
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.0003968999990320299
+    },
+    {
+      "check": "production_distribution_oracles",
+      "status": "PASS",
+      "details": {
+        "normal:0.0:False": {
+          "status": "PASS",
+          "mean": 0.0,
+          "quadrature_errors": [
+            8.730600165294783e-09,
+            4.459917921532286e-09,
+            1.7831576530267928e-08
+          ]
+        },
+        "normal:-2.0:True": {
+          "status": "PASS",
+          "mean": 0.008490702616829673,
+          "quadrature_errors": [
+            1.7159771757720516e-10,
+            4.786461281578689e-10,
+            4.303376870198776e-12
+          ]
+        },
+        "normal:3.0:True": {
+          "status": "PASS",
+          "mean": 3.0586135875252096,
+          "quadrature_errors": [
+            1.7159050613698114e-07,
+            6.365972066956311e-08,
+            1.8070489898179134e-12
+          ]
+        },
+        "empirical:4": {
+          "status": "PASS",
+          "mean": 2.6,
+          "quadrature_errors": [
+            1.6209256159527282e-14,
+            1.1768364061026656e-14,
+            1.3988810110276976e-14
+          ]
+        },
+        "empirical:1": {
+          "status": "PASS",
+          "mean": 3.0,
+          "quadrature_errors": [
+            3.3306690738754696e-14,
+            2.220446049250313e-14,
+            2.220446049250313e-14
+          ]
+        },
+        "mixture": {
+          "status": "PASS",
+          "mean": 0.3999999999999999,
+          "quadrature_errors": [
+            1.238567036503809e-08,
+            8.126708899288982e-08,
+            1.0826595767792296e-10
+          ]
+        },
+        "csg": {
+          "status": "PASS",
+          "mean": 4.54897994784475,
+          "quadrature_errors": [
+            7.192731176109187e-08,
+            2.0493787563252167e-07,
+            2.1923190055056028e-08
+          ]
+        },
+        "hurdle": {
+          "status": "PASS",
+          "mean": 4.199999999999999,
+          "quadrature_errors": [
+            1.4207823120482257e-07,
+            2.5512265153774004e-07,
+            2.604226584956063e-08
+          ]
+        },
+        "power:0.5": {
+          "status": "PASS",
+          "mean": 50.000000000000014,
+          "quadrature_errors": [
+            1.6357147552571094e-06,
+            9.165045360299568e-06,
+            9.63365613849524e-07
+          ]
+        },
+        "power:0.3333333333333333": {
+          "status": "PASS",
+          "mean": 79.78845608028655,
+          "quadrature_errors": [
+            2.74161539833341e-06,
+            3.166846800810039e-05,
+            2.3973991837711524e-07
+          ]
+        },
+        "gev:0.0": {
+          "status": "PASS",
+          "mean": 2.315224561596132,
+          "quadrature_errors": [
+            5.6301956917825753e-08,
+            2.107805911392447e-08,
+            3.953672168491469e-10
+          ]
+        },
+        "gev:-0.2": {
+          "status": "PASS",
+          "mean": 2.0185872337547623,
+          "quadrature_errors": [
+            2.351571633132064e-08,
+            6.099366627408114e-10,
+            2.356722124316784e-14
+          ]
+        },
+        "gev:0.2": {
+          "status": "PASS",
+          "mean": 2.769582792332684,
+          "quadrature_errors": [
+            4.243985260426106e-10,
+            4.7756179136162025e-09,
+            2.4134004542849885e-07
+          ]
+        },
+        "tweedie:1.2": {
+          "status": "PASS",
+          "mean": 3,
+          "quadrature_errors": [
+            3.84596072547444e-09,
+            4.142797805785621e-08,
+            1.0824772079654714e-07
+          ]
+        },
+        "tweedie:1.5": {
+          "status": "PASS",
+          "mean": 3,
+          "quadrature_errors": [
+            6.792996567746086e-08,
+            1.280464702369623e-07,
+            8.47717678240252e-09
+          ]
+        },
+        "tweedie:1.8": {
+          "status": "PASS",
+          "mean": 3,
+          "quadrature_errors": [
+            2.37306416444673e-08,
+            1.450173288098666e-08,
+            2.0226224398475556e-08
+          ]
+        },
+        "bernstein": {
+          "status": "PASS",
+          "mean": 1.4400000000000002,
+          "quadrature_errors": [
+            4.936587765987955e-14,
+            3.9432146661968554e-15,
+            3.3076593599426985e-13
+          ]
+        },
+        "all_zero": {
+          "status": "PASS",
+          "mean": 0.0
+        },
+        "constant_normal": {
+          "status": "PASS",
+          "mean": 2.0
+        },
+        "all_mass_censored_gev": {
+          "status": "PASS",
+          "mean": 0.0
+        },
+        "large_rain": {
+          "status": "PASS",
+          "mean": 900000.0
+        },
+        "infinite_inverse_moment_rejected": "PASS"
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 8.716626199999155
+    },
+    {
+      "check": "NIW_NIG_MNIW_independent",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "conditional_df": 14.0,
+        "conditional_scale_sd": 0.9071577407871845,
+        "independent_draws": 65536,
+        "mcse": 0.0004946020638841315,
+        "importance_ess": 60273.20619285162,
+        "posterior_cdf": 0.8326850377876538,
+        "exact_cdf": 0.8328590283026712,
+        "exp_student_positive_mean": "DIVERGENT"
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.4586577000009129
+    },
+    {
+      "check": "censored_likelihood_Rhat_ESS_MCSE",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "joint_zero_probability": 0.39758361765043326,
+        "incorrect_independent_probability": 0.25,
+        "iid_diagnostics": {
+          "rhat_max": 1.0000614067499674,
+          "ess_bulk_min": 15550.916817549089,
+          "ess_tail_min": 15236.004993480092,
+          "passed": true,
+          "rhat": [
+            0.9999858384788315,
+            1.0000614067499674,
+            0.9999238401287593
+          ],
+          "ess_bulk": [
+            15550.916817549089,
+            15969.496199273895,
+            15577.653128088907
+          ],
+          "ess_tail": [
+            15808.890025436154,
+            15236.004993480092,
+            15388.506274644484
+          ]
+        },
+        "separated_rhat": 2.6984837096415246,
+        "sticky_bulk_ess": 257.88692408382775,
+        "mcse_max": 0.008520207572889541,
+        "SC2_Bayesian_inverse": {
+          "temperature": {
+            "expected_mean": 12.0,
+            "expected_crps": 13.7435575881445
+          },
+          "sqrt": {
+            "expected_mean": 45.87025721710802,
+            "expected_crps": 15.030677216354839
+          },
+          "yj": {
+            "expected_mean": 53.1256947563239,
+            "expected_crps": 15.340239893139437
+          },
+          "logsinh": {
+            "expected_mean": 36.43966394017551,
+            "expected_crps": 12.061520372532758
+          }
+        }
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.3750642999984848
+    },
+    {
+      "check": "learning_Fisher_forest_IDR_ordinal",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "fisher": "EXACT",
+        "bootstrap_leaf_mass": "PASS",
+        "isotonic": "PASS",
+        "ordinal_logit": {
+          "status": "PASS",
+          "equal_threshold_middle": 0.0
+        },
+        "elr_threshold_logit": {
+          "status": "PASS",
+          "equal_threshold_middle": 0.0
+        },
+        "qrf_year_forest": {
+          "status": "PASS",
+          "mean": 2.685768224830725,
+          "crps": 0.5038080554549313
+        },
+        "idr_mean_order": {
+          "status": "PASS",
+          "mean": 2.5,
+          "crps": 0.25
+        }
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.15571050000289688
+    },
+    {
+      "check": "real_fit_sparse_wet_negative_rain_constant_M1",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "hurdle_gamma": {
+          "status": "INSUFFICIENT_TRAINING",
+          "reason": "FEWER_THAN_THREE_POSITIVE_YEARS"
+        },
+        "hurdle_lognormal": {
+          "status": "INSUFFICIENT_TRAINING",
+          "reason": "FEWER_THAN_THREE_POSITIVE_YEARS"
+        },
+        "positive_gamma": "GATED_DATA_WITH_ZEROS",
+        "negative_rain": "INPUT_CONFLICT",
+        "constant_predictor_M1": {
+          "mean": 2.850000028501236,
+          "crps": 0.5981160742846204
+        }
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.030635999999503838
+    },
+    {
+      "check": "truth_date_catalog_hash_adversarial",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "truth_sentinel": 1000000000000.0,
+        "excluded_perturbations": 5,
+        "worker_counts": [
+          1,
+          6
+        ],
+        "historical_folds": 10,
+        "single_member_target": true,
+        "contradictory_duplicate": "INPUT_CONFLICT",
+        "catalog": "OUTER_FROZEN_2022_VINTAGES_RETAINED",
+        "empty_pool": "INSUFFICIENT_TRAINING",
+        "negative_rain": "REJECTED",
+        "complete_joint_years": 19
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.11941940000178874
+    },
+    {
+      "check": "crossing_pooled_validation_SOURCE_year_block",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "crossing_folds": 5,
+        "SOURCE_and_VALID_year_blocks": "EXCLUDED"
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.0031037999979162123
+    },
+    {
+      "check": "finite_coupling_physical_ids_residual_copula",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "analytic_finite_crps_differences": [
+          0.0,
+          0.0015223944238377252
+        ],
+        "independent_scenario_correlation": 0.0032289371937385203,
+        "dependent_scenario_correlation": 0.4992337568816802,
+        "physical_key_join": "PASS",
+        "Sobol_nested_256_512": "PASS"
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.10119429999758722
+    },
+    {
+      "check": "MBC_saved_out_of_sample_replay",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "mbcp_annual": {
+          "status": "PASS",
+          "saved_steps": 41,
+          "out_of_sample_probes": 3
+        },
+        "mbcr_annual": {
+          "status": "PASS",
+          "saved_steps": 42,
+          "out_of_sample_probes": 3
+        },
+        "mbcn_annual": {
+          "status": "PASS",
+          "saved_steps": 92,
+          "out_of_sample_probes": 3
+        }
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.06759550000060699
+    },
+    {
+      "check": "OT_balanced_objective_historical_dynamic_blocks",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "brute_force_assignment_cost": 1.25,
+        "rectangular_cost": 0.8,
+        "dynamic_final_cost": 4.0,
+        "dynamic_reference_years": [
+          1990,
+          1991,
+          1992,
+          1993,
+          1994,
+          1995,
+          1996,
+          1997,
+          1998,
+          1999
+        ],
+        "dynamic_evolved_years": [
+          2000,
+          2001,
+          2002,
+          2003,
+          2004,
+          2005,
+          2006,
+          2007,
+          2008,
+          2009,
+          2010
+        ],
+        "recent_observation_perturbation": "BYTE_IDENTICAL",
+        "pairing_blind_counterexample": "PASS"
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.1394908000002033
+    },
+    {
+      "check": "full_saved_artifacts",
+      "status": "UNAVAILABLE",
+      "missing_files": [
+        "run_summary.json",
+        "method_inventory.csv",
+        "case_method_status.csv.gz",
+        "training_ledger.csv.gz",
+        "fit_ledger.csv.gz",
+        "fit_schedule.csv",
+        "fold_ancestry.csv.gz",
+        "distribution_specs.jsonl.gz",
+        "continuous_predictions.csv.gz",
+        "category_predictions.csv.gz",
+        "joint_predictions.csv.gz",
+        "joint_scenarios.npz",
+        "paired_comparison.csv",
+        "coverage_and_failures.csv",
+        "failure_inclusive_policy.csv",
+        "equal_valid_window_metrics.csv",
+        "category_metrics.csv",
+        "joint_metrics.csv",
+        "metrics_overall.csv",
+        "metrics_by_lead.csv",
+        "metrics_by_season.csv",
+        "metrics_by_year.csv",
+        "metrics_by_month.csv"
+      ]
+    },
+    {
+      "check": "protected_60_after",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "files_checked": 60,
+        "failures": []
+      },
+      "numerical_warnings": [],
+      "elapsed_seconds": 0.6013459999994666
+    }
+  ],
+  "elapsed_seconds": 14.1514634999985,
+  "warnings": [
+    "Retain original tight QDM sensitivity warning; no thresholds relaxed.",
+    "Frozen outer catalog is not a proof of real-time reforecast release.",
+    "Baseline analytic laws are not discretized; finite coupling is separately labeled."
+  ]
+}

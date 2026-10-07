@@ -1,0 +1,11 @@
+Invocation:
+node "C:/Users/user/AppData/Roaming/npm/node_modules/omo-ai/plugin/skills/ulw-research/scripts/report-tools.mjs" outcome verify --session-dir "D:/WORK/Projects/omo/Glosea6/research_bias_correction/20261007-002200"
+
+Monitor: mon_MMT9N67Z82XT7TTB / bash_8.
+Captured decisive output (filter: "ok"|"problems"|verify:):
+  "ok": true,
+  "problems": []
+verify: OK
+watcher completed (exit code 0)
+
+The finite watcher has exited; no live verifier process remains.

@@ -1,0 +1,15 @@
+{
+  "status": "TORCH_CPU_FLOAT64_DETERMINISTIC_PASS",
+  "version": "2.8.0+cpu",
+  "dtype": "torch.float64",
+  "gradient": [
+    2,
+    4
+  ],
+  "threads": 1,
+  "installation_command": "uv pip install --python .venv/Scripts/python.exe torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu",
+  "installation_monitor": "mon_TXBTQRCG7JT5DWPN",
+  "installation_exit_code": 0,
+  "invocation": ".venv/Scripts/python.exe -B -c \"import json,torch;torch.set_num_threads(1);torch.use_deterministic_algorithms(True);x=torch.tensor([1.,2.],dtype=torch.float64,requires_grad=True);(x*x).sum().backward();assert torch.__version__=='2.8.0+cpu' and torch.get_num_threads()==1 and torch.are_deterministic_algorithms_enabled();assert x.grad is not None and x.grad.tolist()==[2.,4.];print(json.dumps({'status':'TORCH_CPU_FLOAT64_DETERMINISTIC_PASS','version':torch.__version__,'dtype':str(x.dtype),'gradient':x.grad.tolist(),'threads':torch.get_num_threads()},indent=2))\"",
+  "cleanup": "Installer exited0, monitor completed; no live installation process/resource remains"
+}

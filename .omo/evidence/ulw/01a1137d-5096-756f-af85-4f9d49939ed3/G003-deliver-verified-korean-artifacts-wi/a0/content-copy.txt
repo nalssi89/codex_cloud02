@@ -1,0 +1,10 @@
+Final liveDOM copy proof after proofreading:
+expectedBlocks=367
+actualBlocks=367
+missingBlocks=0
+sourceAnchors=93
+comparisonMethods=17
+mobileWidth=390
+documentWidth=390
+Literal BJP/Tweedie markers=0; obsolete particles=false.
+Captured via functions.eval real ownedChrome; source qa-verdict.md.

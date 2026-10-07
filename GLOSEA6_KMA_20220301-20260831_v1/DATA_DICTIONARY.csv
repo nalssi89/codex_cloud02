@@ -1,0 +1,8 @@
+TABLE,COLUMN,TYPE,UNIT,DESCRIPTION
+fcst_raw,VALUE,float,degC or mm/period,RAW FCST KMA member value
+hcst_mapping,SOURCE_YEAR,integer,year,Required for temperature detrending
+hcst_mapping,VALUE,float,degC or mm/period,Current DQM/QM source sample
+hcst_legacy_probability,VALUE,float,degC or mm/period,Legacy RAW probability sample; not a forecast member
+asos_kma_daily,T15M,float,degC,Daily KMA station mean when station rule passes
+asos_kma_daily,PRCP,float,mm/day,Daily KMA station mean precipitation
+asos_period_reference,VALUE,float,UNIT column,ASOS value aligned to INIT/LEAD/reference year

@@ -1,0 +1,41 @@
+{
+  "scope": "Shared Bayesian scalar and nested mixture restoration regression, not full experiment validation",
+  "before": {
+    "method": "bjp_niw",
+    "input": "analysis.alternative_bayes_audit.synthetic(False)",
+    "failure": "ValueError: unknown distribution tag: None",
+    "exit_code": 1
+  },
+  "fix": "Lazy dispatch for kind=bayesian_scalar to the delivered Bayesian scalar decoder; no law/fit/scoring formula changed",
+  "commands": [
+    ".venv/Scripts/ruff.exe check --no-cache analysis/alternative_distributions.py analysis/alternative_distribution_bayes_audit.py",
+    ".venv/Scripts/basedpyright.exe --pythonpath .venv/Scripts/python.exe --level warning analysis/alternative_distributions.py analysis/alternative_distribution_bayes_audit.py",
+    ".venv/Scripts/python.exe -B -m analysis.alternative_distribution_bayes_audit",
+    ".venv/Scripts/python.exe -B -m analysis.alternative_distribution_audit"
+  ],
+  "ruff": {"exit_code": 0, "status": "PASS"},
+  "native_types": {"exit_code": 0, "errors": 0, "warnings": 0, "notes": 0},
+  "specific_regression": {
+    "exit_code": 0,
+    "restored_laws": 4,
+    "elapsed_seconds": 2.01971229999981,
+    "methods": ["bjp_niw", "bjp_sqrt_censored"],
+    "nested_mixtures": 2,
+    "checks": ["JSON decoding", "quantile", "CDF", "left CDF", "mean", "zero atom", "CRPS", "log density"]
+  },
+  "existing_regression": {
+    "monitor": "mon_R49GEMXKNPZPJA95",
+    "exit_code": 0,
+    "independent_status": "PASS",
+    "independent_laws": 22,
+    "roundtrip_laws": 27,
+    "edge_checks": "PASS",
+    "density_certificate": "PASS",
+    "invalid_inputs_rejected": 9,
+    "protected_hashes": 60,
+    "elapsed_seconds": 14.110955000000104
+  },
+  "unsuppressed_warning": "SciPy extreme GEV oracle RuntimeWarning overflow encountered in exp; expected CDF and bounded numerical checks passed",
+  "tool_lsp_limitation": "Tool server cannot resolve existing analysis namespace; actual project-venv basedpyright passes",
+  "cleanup": "All regression processes and monitors exited; no browser/server/temporary resources created"
+}

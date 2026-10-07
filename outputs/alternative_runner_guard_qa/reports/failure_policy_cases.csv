@@ -1,0 +1,4 @@
+﻿case_id,method_id,policy,score,loss,source,original_status
+20220307_1MON_W01_t15m,climatology_empirical,climatology_empirical+climatology_on_failure,CRPS,3.034965037762418,method,OK
+20220307_1MON_W01_t15m,climatology_empirical,climatology_empirical+climatology_on_failure,BRIER,0.6666666666666664,method,OK
+20220307_1MON_W01_t15m,climatology_empirical,climatology_empirical+climatology_on_failure,RPS,0.5555555555555554,method,OK

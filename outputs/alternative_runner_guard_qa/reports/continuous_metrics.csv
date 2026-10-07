@@ -1,0 +1,16 @@
+﻿PRODUCT,VARIABLE,method_id,surface,group,N,score,scored_N,mean_loss,restriction,LEAD,VALID_MONTH,SEASON,YEAR
+1mon,t15m,climatology_empirical,continuous,overall,1,CRPS,1,3.034965037762418,success_only,,,,
+1mon,t15m,climatology_empirical,continuous,overall,1,BRIER,1,0.6666666666666664,success_only,,,,
+1mon,t15m,climatology_empirical,continuous,overall,1,RPS,1,0.5555555555555554,success_only,,,,
+1mon,t15m,climatology_empirical,continuous,lead,1,CRPS,1,3.034965037762418,success_only,W01,,,
+1mon,t15m,climatology_empirical,continuous,lead,1,BRIER,1,0.6666666666666664,success_only,W01,,,
+1mon,t15m,climatology_empirical,continuous,lead,1,RPS,1,0.5555555555555554,success_only,W01,,,
+1mon,t15m,climatology_empirical,continuous,month,1,CRPS,1,3.034965037762418,success_only,,3,,
+1mon,t15m,climatology_empirical,continuous,month,1,BRIER,1,0.6666666666666664,success_only,,3,,
+1mon,t15m,climatology_empirical,continuous,month,1,RPS,1,0.5555555555555554,success_only,,3,,
+1mon,t15m,climatology_empirical,continuous,season,1,CRPS,1,3.034965037762418,success_only,,,MAM,
+1mon,t15m,climatology_empirical,continuous,season,1,BRIER,1,0.6666666666666664,success_only,,,MAM,
+1mon,t15m,climatology_empirical,continuous,season,1,RPS,1,0.5555555555555554,success_only,,,MAM,
+1mon,t15m,climatology_empirical,continuous,year,1,CRPS,1,3.034965037762418,success_only,,,,2022
+1mon,t15m,climatology_empirical,continuous,year,1,BRIER,1,0.6666666666666664,success_only,,,,2022
+1mon,t15m,climatology_empirical,continuous,year,1,RPS,1,0.5555555555555554,success_only,,,,2022

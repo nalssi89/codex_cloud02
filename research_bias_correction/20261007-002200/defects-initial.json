@@ -1,0 +1,123 @@
+{
+  "command": "check",
+  "status": "pass",
+  "exitCode": 0,
+  "layout": "not_run",
+  "defects": [
+    {
+      "code": "unsourced_number",
+      "severity": "major",
+      "selector": "#report > article > section:nth-of-type(2) > p:nth-of-type(1)",
+      "line": 121,
+      "message": "number \"3개월\" without a lineage tag or citation: \"다. 은 주간 구간, 은 개별 달력 월이며 3개월 합계가 아니다. 기온은 구간 평균 °\"",
+      "hint": "Tag the number MEASURED / ASSUMED / DERIVED or cite its source in the same paragraph."
+    },
+    {
+      "code": "unsourced_number",
+      "severity": "major",
+      "selector": "#report > article > section:nth-of-type(2) > p:nth-of-type(2)",
+      "line": 122,
+      "message": "number \"30년\" without a lineage tag or citation: \"어지며 현재 적합 사례의 훈련 연도는 24~30년, 역사 멤버는 3/7개다. 멤버 수를\"",
+      "hint": "Tag the number MEASURED / ASSUMED / DERIVED or cite its source in the same paragraph."
+    },
+    {
+      "code": "en_dash_in_prose",
+      "severity": "minor",
+      "selector": "#report > article > section:nth-of-type(2) > p:nth-of-type(2)",
+      "line": 122,
+      "message": "en dash \"–\" outside a numeric range in <p>: \"발행·목표 조건의 역사 훈련은 연도별 예보–관측 쌍으로 이루어지며 현재 적합 사례의\"",
+      "hint": "Use a hyphen for compounds; keep the en dash only between numbers."
+    },
+    {
+      "code": "en_dash_in_prose",
+      "severity": "minor",
+      "selector": "#report > article > section:nth-of-type(4) > ul > li:nth-of-type(1)",
+      "line": 273,
+      "message": "en dash \"–\" outside a numeric range in <li>: \"장점: 예보–관측의 조건부 관계를 학습한다. 짧은 자료\"",
+      "hint": "Use a hyphen for compounds; keep the en dash only between numbers."
+    },
+    {
+      "code": "en_dash_in_prose",
+      "severity": "minor",
+      "selector": "#report > article > section:nth-of-type(4) > p:nth-of-type(4)",
+      "line": 277,
+      "message": "en dash \"–\" outside a numeric range in <p>: \"기온–강수 다변량 BJP는 후순위다. Schep\"",
+      "hint": "Use a hyphen for compounds; keep the en dash only between numbers."
+    },
+    {
+      "code": "en_dash_in_prose",
+      "severity": "minor",
+      "selector": "#report > article > section:nth-of-type(5) > p:nth-of-type(7)",
+      "line": 293,
+      "message": "en dash \"–\" outside a numeric range in <p>: \"p<2)**는 compound Poisson–Gamma 형태로 0과 양의 왜도를 함께\"",
+      "hint": "Use a hyphen for compounds; keep the en dash only between numbers."
+    },
+    {
+      "code": "en_dash_in_prose",
+      "severity": "minor",
+      "selector": "#report > article > section:nth-of-type(7) > p:nth-of-type(3)",
+      "line": 311,
+      "message": "en dash \"–\" outside a numeric range in <p>: \"ti 또는 train-only detrend–보정–retrend를 고려한다. 현행 fo\"",
+      "hint": "Use a hyphen for compounds; keep the en dash only between numbers."
+    },
+    {
+      "code": "en_dash_in_prose",
+      "severity": "minor",
+      "selector": "#report > article > section:nth-of-type(7) > h3:nth-of-type(3)",
+      "line": 313,
+      "message": "en dash \"–\" outside a numeric range in <h3>: \"Finite-member signal–noise\"",
+      "hint": "Use a hyphen for compounds; keep the en dash only between numbers."
+    },
+    {
+      "code": "en_dash_in_prose",
+      "severity": "minor",
+      "selector": "#report > article > section:nth-of-type(7) > p:nth-of-type(5)",
+      "line": 314,
+      "message": "en dash \"–\" outside a numeric range in <p>: \"Bayesian signal–noise는 역사 앙상블 평균의 표본 잡음\"",
+      "hint": "Use a hyphen for compounds; keep the en dash only between numbers."
+    },
+    {
+      "code": "en_dash_in_prose",
+      "severity": "minor",
+      "selector": "#report > article > section:nth-of-type(9) > p:nth-of-type(1)",
+      "line": 329,
+      "message": "en dash \"–\" outside a numeric range in <p>: \"기온과 강수의 고온–건조 공동확률, 여러 주·월의 경로가 필요\"",
+      "hint": "Use a hyphen for compounds; keep the en dash only between numbers."
+    },
+    {
+      "code": "chart_svg_missing_labels",
+      "severity": "minor",
+      "selector": "#report > article > section:nth-of-type(10) > figure > div > svg",
+      "line": 340,
+      "message": "<svg width=\"360\" height=\"700\"> chart is missing: numeric ticks (0 < 3)",
+      "hint": "Add the missing title, axis ticks, or unit label to the chart."
+    }
+  ],
+  "counts": {
+    "blocker": 0,
+    "major": 2,
+    "minor": 9,
+    "total": 11
+  },
+  "gatesRun": [
+    "korean_no_keep_all",
+    "emoji_in_prose",
+    "em_dash_in_prose",
+    "en_dash_in_prose",
+    "heading_too_long",
+    "heading_generic",
+    "unsourced_number",
+    "chart_without_figure",
+    "chart_svg_no_text",
+    "chart_svg_missing_labels",
+    "korean_serif_font",
+    "section_without_citation",
+    "missing_closing_section",
+    "missing_citation_section",
+    "broken_asset_reference"
+  ],
+  "gatesSkipped": [
+    "palette_off_token",
+    "missing_required_section"
+  ]
+}

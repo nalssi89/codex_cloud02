@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"sessionDir": "D:\\WORK\\Projects\\omo\\Glosea6\\research_bias_correction\\20261007-002200",
+	"startedAt": "2026-10-06T23:17:20.487Z",
+	"finishedAt": "2026-10-07T00:54:39.084Z",
+	"elapsedMinutes": 97,
+	"lane": "no-format",
+	"interview": null,
+	"deliverables": [
+		{
+			"format": "md",
+			"status": "delivered",
+			"promised": true,
+			"updatedAt": "2026-10-07T00:30:48.848Z",
+			"path": "D:\\WORK\\Projects\\omo\\Glosea6\\research_bias_correction\\20261007-002200\\SYNTHESIS.md",
+			"bytes": 53948
+		},
+		{
+			"format": "html",
+			"status": "delivered",
+			"promised": true,
+			"updatedAt": "2026-10-07T00:30:48.855Z",
+			"path": "D:\\WORK\\Projects\\omo\\Glosea6\\research_bias_correction\\20261007-002200\\report.html",
+			"bytes": 321532
+		}
+	],
+	"renders": [],
+	"gates": {
+		"static": "pass",
+		"layout": "pass",
+		"visual": "pass",
+		"proofread": "pass"
+	},
+	"residualDefects": [],
+	"repair": {
+		"attempts": 2,
+		"action": "deliver",
+		"reason": "clean"
+	},
+	"sources": {
+		"total": 93,
+		"domains": 32
+	}
+}

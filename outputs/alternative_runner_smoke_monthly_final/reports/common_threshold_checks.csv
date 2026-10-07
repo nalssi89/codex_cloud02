@@ -1,0 +1,6 @@
+﻿case_id,method_id,threshold_status
+20220307_3MON_M01_prcp,bjp_sqrt_censored,MATCH
+20220307_3MON_M01_prcp,bjp_yj_fixed,MATCH
+20220307_3MON_M01_prcp,bjp_logsinh_fixed,MATCH
+20220307_3MON_M01_prcp,bayesian_anomaly_ridge,MATCH
+20220307_3MON_M01_t15m,bayesian_anomaly_ridge,MATCH

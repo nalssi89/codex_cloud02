@@ -1,0 +1,26 @@
+# Debate log
+Columns per round: claim, attack, defense, verdict, graph change.
+
+## Round1 — skeptic final adversarial pass
+Observer skeptic,2026-10-06. Reviewed all wave dossiers/currentcode andprimarypassages; independently reproducedGaussianmean11.8var5.76, reorderCRPS3.75, mixturetotalvarianceexample.
+
+|claim|attack|defense|verdict|graph change|
+|---|---|---|---|---|
+|C01|fixedGaussian≠currentfit≠BJPposterior|fixedconditionalalgebra only;MAPtransformsnotalluncertainty|acceptnarrowly|keepfit/spread/objective distinctions|
+|C02|currentrainalreadyhaszeroatom;CSGnotnewparadigm|positive-skewfamilyextension;NOAAweeklyprecedentonly|acceptdesignjudgment|nozeroabilitynovelty/superiority|
+|C03|exchangeable≠independent1/M;regimemismatch|explicitconditionalGaussianindependentnoise;syntheticcorrelationcounterexample|acceptconditionalcandidate|provenancefuturegate|
+|C04|MOSpointnotprobabilisticlike-for-like;shrinkerasesignal|definedresidualCDF;fullmixturevariance;train-onlypenalty|acceptconditional|nestedrestrictedcomparator,notnewfamily|
+|C05,C06|finiteEMOSsampling≠analyticCDF;IDsrequirementsdiffer|purepermutationonlyinvariance;rawECCIDs,SSobservedvectors,BJPannualmeans|acceptwithqualifier|analyticmarginalscoresretained|
+|C07|MBCnincludesreanalysis-drivenheldouttests|not“noevaluation”;noKoreanconditionalseasonalreliabilityproof|acceptbounded|climatevsissuedforecastscope|
+|C08,C09|n30notuniversalMLban;Tanzanianormalizationleakage|poolingconditional;Alpinedailytarget;sourcepreprocessingnotcopied|accept|noMLordering/minimum|
+|C10|publishedLOYO may usefuturetrendinfo|past-onlytransforms/priors/tuningmandatory|accept|nooperationalgaininference|
+|C11|members/repeatsnotindependent, iidfairnotautomatic|sameissueddistributionprimary;pairyearblock sensitivity|accept|noofficialscorecorrection|
+|C12|APCCmetadatanoarchive-rowproof|potentialprovenancebreakonly|acceptboundedobservation|archiveeffectunknown|
+
+Overallconditionalaccept means shortlist valid IF report reflects all qualifications. This is researchclaimdebate, not code-reviewapproval or measuredKoreanskill. No unresolved criterion blocker to conditional literature comparison. Futureefficacy/identity/softwareverification claims remainblockedandnotasserted.
+AllEXPANDleadsclosedasverified,rejected/accessgap,or futureimplementationgate. Noadditionalbroadretrievalneeded.
+
+## Round2 — fresh refinement
+Sevenofthe8assignedsliceverdictshavearrived; each noC1/C2literatureblockerwithscopedconditions. final-skepticidentifiedscored-objectandannualweightdraftingconflicts above; acceptedresolution recordedrefinement-verdicts.md. Sourceauditstillpending,notapprovalyet. NoKoreanefficacyclaimwasadded.
+
+Round2closed:source-auditreturned,noC1/C2blocker. All8slicesconditionallyacceptedwithqualificationsthatwillappearinthecomparison. ThereisnoefficacyallowlistentryfornewGloSea6methodgain. Source-domaincountsarecoverage,notindependentreplicationcounts. C12archivecausalclaimremainsunresolvedandexcluded.

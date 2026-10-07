@@ -1,0 +1,3 @@
+﻿PRODUCT,VARIABLE,method_id,status,count,surface
+3mon,prcp,schaake_window,OK,1,joint_component_coverage_not_vector_score
+3mon,t15m,schaake_window,OK,1,joint_component_coverage_not_vector_score

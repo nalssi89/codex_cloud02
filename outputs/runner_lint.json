@@ -1,0 +1,479 @@
+[
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 59,
+      "row": 19
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_artifacts.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from __future__ import annotations\n\nimport os\nfrom pathlib import Path\n\nimport numpy as np\n\nfrom analysis.alternative_runner_io import (\n    Row,\n    digest,\n    write_rows,\n)\nfrom analysis.alternative_runner_tables import json_object\nfrom analysis.calibration import FloatArray\nfrom analysis.data_io import Json\n\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 22
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 3
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "name": "unsorted-imports",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 53,
+      "row": 25
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_engine.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from __future__ import annotations\n\nfrom collections import defaultdict\nfrom collections.abc import Iterator\n\nfrom analysis.alternative_contracts import (\n    CaseInput,\n    JointTrainingSet,\n    TrainingSet,\n)\nfrom analysis.alternative_experiment_types import ExperimentInputs\nfrom analysis.alternative_runner_engine_base import COUPLING_IDS\nfrom analysis.alternative_runner_io import (\n    Row,\n    digest,\n    dumps,\n    json_value,\n    known_input,\n)\nfrom analysis.alternative_runner_joint import Engine\nfrom analysis.alternative_training import make_training\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 27
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 3
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "name": "unsorted-imports",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "RUF022",
+    "end_location": {
+      "column": 64,
+      "row": 28
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_engine.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "[\n    \"COUPLING_IDS\",\n    \"Engine\",\n    \"check_catalog_immutability\",\n    \"joint_keys\",\n    \"joint_scalar_ancestry\",\n    \"retained_joint_rows\",\n]",
+          "end_location": {
+            "column": 64,
+            "row": 28
+          },
+          "location": {
+            "column": 11,
+            "row": 27
+          }
+        }
+      ],
+      "message": "Apply an isort-style sorting to `__all__`"
+    },
+    "location": {
+      "column": 11,
+      "row": 27
+    },
+    "message": "`__all__` is not sorted",
+    "name": "unsorted-dunder-all",
+    "noqa_row": 27,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-dunder-all"
+  },
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 63,
+      "row": 44
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_engine_base.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from __future__ import annotations\n\nimport threading\nfrom collections import OrderedDict, defaultdict\nfrom collections.abc import Callable, Mapping\nfrom dataclasses import replace\nfrom pathlib import Path\n\nimport numpy as np\n\nfrom analysis.alternative_bayes import fit_bayes\nfrom analysis.alternative_classical import fit_classical\nfrom analysis.alternative_contracts import (\n    AlternativeError,\n    CaseInput,\n    CategoryFitResult,\n    FitConfig,\n    FitDiagnostics,\n    FitResult,\n    FoldSpec,\n    JointTrainingSet,\n    MethodSpec,\n    PredictiveDistribution,\n    TrainingSet,\n)\nfrom analysis.alternative_distributions import (\n    normal,\n    weighted_empirical,\n)\nfrom analysis.alternative_experiment_types import ExperimentInputs\nfrom analysis.alternative_learning import fit_learning\nfrom analysis.alternative_runner_ancestry import required_folds\nfrom analysis.alternative_runner_io import (\n    Row,\n    digest,\n    json_value,\n    known_input,\n    write_json,\n)\nfrom analysis.alternative_runner_training import TrainingCache\nfrom analysis.data_io import Json, csv_rows\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 46
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 3
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "name": "unsorted-imports",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 60,
+      "row": 47
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_joint.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from __future__ import annotations\n\nfrom collections.abc import Iterator\nfrom dataclasses import replace\n\nimport numpy as np\n\nfrom analysis.alternative_bayes import fit_mbjp\nfrom analysis.alternative_contracts import (\n    AlternativeError,\n    ContinuousPrediction,\n    FitStatus,\n    JointFitResult,\n    JointPrediction,\n    JointTrainingSet,\n    MethodSpec,\n    PredictiveDistribution,\n    TrainingSet,\n)\nfrom analysis.alternative_data import gate_report\nfrom analysis.alternative_distributions import (\n    distribution_from_spec,\n    weighted_empirical,\n)\nfrom analysis.alternative_experiment_types import JointTruth\nfrom analysis.alternative_joint import fit_joint\nfrom analysis.alternative_joint_folds import component_training\nfrom analysis.alternative_joint_marginals import fit_bjp_marginal, fit_emos_marginal\nfrom analysis.alternative_runner_engine_base import COUPLING_IDS\nfrom analysis.alternative_runner_io import (\n    Row,\n    digest,\n    dumps,\n    json_value,\n    write_json,\n)\nfrom analysis.alternative_runner_scalar import EngineScalar\nfrom analysis.alternative_runner_scoring import (\n    identity,\n    score_continuous,\n    score_joint,\n)\nfrom analysis.alternative_validation_io import read_json\nfrom analysis.data_io import Json\n\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 50
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 3
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "name": "unsorted-imports",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 51,
+      "row": 42
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_outputs.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from __future__ import annotations\n\nimport os\nfrom collections import Counter\nfrom collections.abc import Sequence\nfrom pathlib import Path\n\nimport numpy as np\n\nfrom analysis.alternative_contracts import (\n    CaseInput,\n    JointTrainingSet,\n    MethodSpec,\n    TrainingSet,\n)\nfrom analysis.alternative_registry import method_registry\nfrom analysis.alternative_runner_ancestry import actual_fold_rows\nfrom analysis.alternative_runner_artifacts import write_numeric_laws\nfrom analysis.alternative_runner_engine import (\n    Engine,\n    joint_scalar_ancestry,\n    retained_joint_rows,\n)\nfrom analysis.alternative_runner_io import (\n    Row,\n    dumps,\n    load_fit,\n    training_rows,\n    write_laws,\n    write_rows,\n    write_stream_rows,\n)\nfrom analysis.alternative_runner_tables import (\n    collect,\n    joint_case_statuses,\n    json_object,\n    json_objects,\n    registry_rows,\n    row,\n)\nfrom analysis.alternative_runner_types import Work\nfrom analysis.data_io import Json\nfrom analysis.scoring import generate_summaries\n\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 44
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 3
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "name": "unsorted-imports",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "F402",
+    "end_location": {
+      "column": 12,
+      "row": 101
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_outputs.py",
+    "fix": null,
+    "location": {
+      "column": 9,
+      "row": 101
+    },
+    "message": "Import `row` from line 40 shadowed by loop variable",
+    "name": "import-shadowed-by-loop-var",
+    "noqa_row": 101,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/import-shadowed-by-loop-var"
+  },
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 63,
+      "row": 39
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_scalar.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from __future__ import annotations\n\nfrom time import perf_counter\n\nimport numpy as np\n\nfrom analysis.alternative_contracts import (\n    AlternativeError,\n    CaseInput,\n    CategoryFitResult,\n    CategoryPrediction,\n    ContinuousPrediction,\n    FitDiagnostics,\n    FitStatus,\n    MethodSpec,\n    TrainingSet,\n)\nfrom analysis.alternative_data import gate_report\nfrom analysis.alternative_distributions import (\n    distribution_from_spec,\n)\nfrom analysis.alternative_runner_engine_base import EngineBase\nfrom analysis.alternative_runner_io import (\n    Row,\n    digest,\n    json_value,\n    known_input,\n    write_json,\n)\nfrom analysis.alternative_runner_scoring import (\n    identity,\n    score_categories,\n    score_continuous,\n)\nfrom analysis.alternative_validation_io import read_json\nfrom analysis.data_io import Json\n\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 42
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 3
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "name": "unsorted-imports",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 51,
+      "row": 28
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_schedule.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from __future__ import annotations\n\nfrom pathlib import Path\n\nfrom analysis.alternative_contracts import (\n    CaseInput,\n    JointTrainingSet,\n    MethodSpec,\n)\nfrom analysis.alternative_data import aligned_joint\nfrom analysis.alternative_runner_engine import (\n    COUPLING_IDS,\n    Engine,\n    joint_keys,\n)\nfrom analysis.alternative_runner_io import (\n    Row,\n    digest,\n    dumps,\n    known_input,\n    write_rows,\n)\nfrom analysis.alternative_runner_types import Work\n\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 30
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 3
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "name": "unsorted-imports",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 51,
+      "row": 24
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_tables.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from __future__ import annotations\n\nfrom collections import defaultdict\nfrom collections.abc import Sequence\n\nfrom analysis.alternative_contracts import (\n    CaseInput,\n    MethodSpec,\n)\nfrom analysis.alternative_experiment_types import ExperimentInputs\nfrom analysis.alternative_runner_engine import (\n    COUPLING_IDS,\n)\nfrom analysis.alternative_runner_io import (\n    Row,\n    dumps,\n)\nfrom analysis.alternative_runner_types import Work\nfrom analysis.data_io import Json\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 26
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 3
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "name": "unsorted-imports",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "F823",
+    "end_location": {
+      "column": 21,
+      "row": 88
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_tables.py",
+    "fix": null,
+    "location": {
+      "column": 18,
+      "row": 88
+    },
+    "message": "Local variable `row` referenced before assignment",
+    "name": "undefined-local",
+    "noqa_row": 88,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local"
+  },
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 56,
+      "row": 17
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_training.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from __future__ import annotations\n\nfrom collections import defaultdict\nfrom dataclasses import replace\n\nfrom analysis.alternative_contracts import (\n    AlternativeError,\n    CaseInput,\n    TrainingRow,\n    TrainingSet,\n)\nfrom analysis.alternative_data import training_for\nfrom analysis.alternative_experiment_types import ExperimentInputs\nfrom analysis.alternative_training import make_training\n\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 19
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 3
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "name": "unsorted-imports",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 83,
+      "row": 5
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\alternative_runner_types.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from dataclasses import dataclass\n\nfrom analysis.alternative_contracts import CaseInput, JointTrainingSet, MethodSpec\n\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 7
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 3
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "name": "unsorted-imports",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "I001",
+    "end_location": {
+      "column": 63,
+      "row": 48
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\run_alternative_comparison.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from analysis.alternative_contracts import (\n    FitConfig,\n)\nfrom analysis.alternative_data import load_experiment\nfrom analysis.alternative_registry import method_registry\nfrom analysis.alternative_runner_engine import (\n    Engine,\n    check_catalog_immutability,\n)\nfrom analysis.alternative_runner_io import (\n    check_output,\n    digest,\n    dumps,\n    json_value,\n    known_input,\n    protected_hashes,\n    source_hashes,\n    write_json,\n    write_rows,\n)\nfrom analysis.alternative_runner_outputs import build_outputs\nfrom analysis.alternative_runner_schedule import schedule\nfrom analysis.alternative_runner_tables import json_object\nfrom analysis.alternative_runner_types import RunOptions, Work\nfrom analysis.alternative_validation_io import read_json\nfrom analysis.data_io import Json\n\n",
+          "end_location": {
+            "column": 1,
+            "row": 50
+          },
+          "location": {
+            "column": 1,
+            "row": 22
+          }
+        }
+      ],
+      "message": "Organize imports"
+    },
+    "location": {
+      "column": 1,
+      "row": 22
+    },
+    "message": "Import block is un-sorted or un-formatted",
+    "name": "unsorted-imports",
+    "noqa_row": 22,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unsorted-imports"
+  },
+  {
+    "cell": null,
+    "code": "F823",
+    "end_location": {
+      "column": 42,
+      "row": 123
+    },
+    "filename": "D:\\WORK\\Projects\\omo\\Glosea6\\analysis\\run_alternative_comparison.py",
+    "fix": null,
+    "location": {
+      "column": 34,
+      "row": 123
+    },
+    "message": "Local variable `schedule` referenced before assignment",
+    "name": "undefined-local",
+    "noqa_row": 123,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/undefined-local"
+  }
+]

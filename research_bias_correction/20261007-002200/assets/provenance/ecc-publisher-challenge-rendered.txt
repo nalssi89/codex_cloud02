@@ -1,0 +1,22 @@
+DOI: https://doi.org/10.1214/13-STS443
+Rendered destination: https://projecteuclid.org/journals/statistical-science/volume-28/issue-4/Uncertainty-Quantification-in-Complex-Simulation-Models-Using-Ensemble-Copula-Coupling/10.1214/13-STS443.full
+- iframe "Request unsuccessful. Incapsula incident ID: 1839000780042834473-283989422484951954" [ref=e1]:
+  - image "SPIE--The International Society for Optical Engineering"
+  - heading "projecteuclid.org Additional security check is required" [level=1]
+  - iframe "hCaptcha 보안 챌린지에 대한 확인란이 포함된 위젯" [ref=f1e1]:
+    - generic [ref=f3e1]:
+      - checkbox "'나는 인간입니다', 도전 과제를 시작하거나 접근성 쿠키가 있는 경우 도전 과제를 우회하려면 선택하십시오." [ref=f3e2]
+      - text: "사람입니다"
+      - button "hCaptcha 로고, 더 많은 정보가 있는 새 창 열기" [ref=f3e3]
+      - link "hCaptcha 개인정보 보호정책 (새 탭에서 열기)" [ref=f3e4]: "개인정보 보호"
+      - text: "-"
+      - link "hCaptcha 서비스 약관 (새 탭에서 열기)" [ref=f3e5]: "약관"
+      - image "상표"
+      - status
+  - iframe:
+    - generic [hidden] [focused]:
+      - button "답변 확인" [ref=f2e1]: "검사"
+      - button "KO - Korean, 언어 선택" [ref=f2e2]
+      - button "About hCaptcha & Accessibility Options" [ref=f2e3]
+      - button "도전을 새로 고칩니다." [ref=f2e4]
+      - button "hCaptcha 로고, 더 많은 정보가 있는 새 창 열기" [ref=f2e5]

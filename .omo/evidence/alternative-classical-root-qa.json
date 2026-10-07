@@ -1,0 +1,38 @@
+{
+  "scope": "Actual fixed support-valid example method surface; mixed-zero BMA terminal receipt and full comparison remain pending",
+  "command": ".venv/Scripts/python.exe -B -m analysis.alternative_classical_real_audit",
+  "monitor": "mon_ZTYWHN221MW6E51F",
+  "exit_code": 0,
+  "elapsed_seconds": 132.61365080000178,
+  "records": 120,
+  "method_ids": 30,
+  "successful_method_ids": 28,
+  "status_counts": {"OK": 82, "NOT_APPLICABLE_DOMAIN": 34, "GATED_DATA": 4},
+  "cases": [
+    "20220307_1MON_W01_prcp",
+    "20220307_1MON_W01_t15m",
+    "20220307_3MON_M01_prcp",
+    "20220307_3MON_M01_t15m"
+  ],
+  "selection": "Fixed source order and positive-Gamma/conjugate-BJP support, never chosen by observed forecast skill",
+  "checks": [
+    "Real historical-only fitting and actual truth only at scoring",
+    "Original-unit support, finite mean and nonnegative CRPS",
+    "Quantile order",
+    "Exact serialized/restored mean, quantiles and CRPS within original tolerance",
+    "Every nongated ID successfully predicted on its supported response domain"
+  ],
+  "protected_before": 60,
+  "protected_after": 60,
+  "numerical_failure_boundary": {
+    "command": ".venv/Scripts/python.exe -B -m analysis.alternative_classical_mixture_failure_audit",
+    "exit_code": 0,
+    "elapsed_seconds": 0.6691445000033127,
+    "eligible_years": 14,
+    "failed_folds": 14,
+    "component_failure_status": "POSTERIOR_DIAGNOSTICS_FAILED",
+    "data_insufficient_status": "INSUFFICIENT_INNER_FOLDS"
+  },
+  "cleanup": "Readonly root audit processes completed; no server/browser/temporary resources",
+  "remaining": "The unchanged mixed-zero 14-fold BMA retry is owned by st_01a11436; no assertion, budget or precision threshold weakening"
+}

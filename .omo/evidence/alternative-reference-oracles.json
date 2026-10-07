@@ -1,0 +1,20 @@
+{
+  "status": "REFERENCE_ORACLES_PASS",
+  "tweedie": [
+    5,
+    1,
+    5,
+    25,
+    250
+  ],
+  "mixture_crps": 2.5,
+  "wrong_component_crps_average": 5,
+  "negative_latent_rain_inverse": 0,
+  "sqrt_t9_rain_mean": 64.28571428571429,
+  "sqrt_t9_rain_p95": 336.0303023871549,
+  "correlated_mean_noise_M3": 5.3999999999999995,
+  "iid_mean_noise_M3": 3,
+  "scope": "Known numerical reference inputs/answers only; not method fits or skill results",
+  "invocation": ".venv/Scripts/python.exe -B -c \"import json,math,numpy as np;from analysis.calibration import empirical_crps;from scipy.stats import t;mu,phi,p=25.,2.,1.5;lam=mu**(2-p)/(phi*(2-p));alpha=(2-p)/(p-1);theta=phi*(p-1)*mu**(p-1);mean=lam*alpha*theta;variance=lam*alpha*(1+alpha)*theta**2;crps=empirical_crps(np.array([0.,10.]),0.);assert mean==25. and variance==250. and crps==2.5;assert 100*max(0.,-1.)**2==0.;rain_t_mean=100*9/(9-2)/2;assert math.isclose(rain_t_mean,64.28571428571429);print(json.dumps({'status':'REFERENCE_ORACLES_PASS','tweedie':[lam,alpha,theta,mean,variance],'mixture_crps':crps,'wrong_component_crps_average':5.,'negative_latent_rain_inverse':0.,'sqrt_t9_rain_mean':rain_t_mean,'sqrt_t9_rain_p95':100*float(t.ppf(.95,9))**2,'correlated_mean_noise_M3':9*(.4+.6/3),'iid_mean_noise_M3':3.},indent=2))\"",
+  "cleanup": "Python-B command finished; no persistent resources/temp files created"
+}

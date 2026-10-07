@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "manifest_verified_files": 24,
+  "stations": 62,
+  "daily_rows": 13062,
+  "station_date_rows": 809820,
+  "source_start": "19910101",
+  "source_end": "20261005",
+  "requests_verified": 450,
+  "counts": {
+    "temperature": {
+      "62": 12797,
+      "61": 248,
+      "60": 17
+    },
+    "precipitation": {
+      "62": 13038,
+      "61": 24
+    },
+    "station_rows": {
+      "62": 13038,
+      "61": 24
+    }
+  },
+  "gap_records": 282,
+  "maximum_independent_mean_difference": {
+    "temperature": 2.1316282072803006e-14,
+    "precipitation": 2.842170943040401e-14
+  },
+  "maximum_original_daily_difference": {
+    "temperature": 0.004839161290323357,
+    "precipitation": 0.7245107096774106
+  },
+  "original_contributor_count_changes": {
+    "temperature": 0,
+    "precipitation": 32
+  },
+  "source_daily_sha256": "30aae6da5e383bfcadf4e8e652e0b58654828fab95333b07c8f0d55052512747"
+}

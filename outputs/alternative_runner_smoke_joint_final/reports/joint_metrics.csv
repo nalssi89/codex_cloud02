@@ -1,0 +1,16 @@
+﻿PRODUCT,VARIABLE,method_id,surface,group,N,score,scored_N,mean_loss,restriction,LEAD,VALID_MONTH,SEASON,YEAR
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,overall,1,ENERGY,1,2.537893872341632,success_only,,,,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,overall,1,HOT_DRY_BRIER,0,,success_only,,,,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,overall,1,VARIOGRAM,1,0.5656643925211519,success_only,,,,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,lead,1,ENERGY,1,2.537893872341632,success_only,"[""W01"",""W02"",""W03"",""W04"",""W05"",""W06"",""W07"",""W08""]",,,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,lead,1,HOT_DRY_BRIER,0,,success_only,"[""W01"",""W02"",""W03"",""W04"",""W05"",""W06"",""W07"",""W08""]",,,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,lead,1,VARIOGRAM,1,0.5656643925211519,success_only,"[""W01"",""W02"",""W03"",""W04"",""W05"",""W06"",""W07"",""W08""]",,,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,month,1,ENERGY,1,2.537893872341632,success_only,,3,,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,month,1,HOT_DRY_BRIER,0,,success_only,,3,,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,month,1,VARIOGRAM,1,0.5656643925211519,success_only,,3,,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,season,1,ENERGY,1,2.537893872341632,success_only,,,MAM,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,season,1,HOT_DRY_BRIER,0,,success_only,,,MAM,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,season,1,VARIOGRAM,1,0.5656643925211519,success_only,,,MAM,
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,year,1,ENERGY,1,2.537893872341632,success_only,,,,2022
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,year,1,HOT_DRY_BRIER,0,,success_only,,,,2022
+1mon,"[""t15m:W01"",""t15m:W02"",""t15m:W03"",""t15m:W04"",""t15m:W05"",""t15m:W06"",""t15m:W07"",""t15m:W08""]",mbjp_niw,joint,year,1,VARIOGRAM,1,0.5656643925211519,success_only,,,,2022

@@ -1,0 +1,47 @@
+{
+  "scope": "Independent available checks after actual leakage and censored-support repairs, not FULL saved experiment validation",
+  "crossing_year_before": {
+    "exit_code": 1,
+    "fixture": "cross/prequential/2005",
+    "leaked_row": "early:validation:2005:0",
+    "held_out_years": [2006]
+  },
+  "crossing_year_after": {
+    "SOURCE_and_VALID_year_blocks": "EXCLUDED",
+    "crossing_folds": 5,
+    "local_ancestor_hash_replays": 14,
+    "native_errors": 0,
+    "native_warnings": 0,
+    "ruff": "PASS"
+  },
+  "censored_support_before": {
+    "command": ".venv/Scripts/python.exe -B -W error -c \"import numpy as np;from analysis.alternative_distributions import censored_gev;print(censored_gev(1.,2.,0.).cdf(np.array([-10000.])))\"",
+    "exit_code": 1,
+    "failure": "SciPy overflow RuntimeWarning evaluating irrelevant negative latent input"
+  },
+  "censored_support_after": {
+    "command": ".venv/Scripts/python.exe -B -W error -m analysis.alternative_distribution_censor_audit",
+    "exit_code": 0,
+    "laws": 5,
+    "shapes": 5,
+    "warnings_are_errors": true,
+    "native_errors": 0,
+    "native_warnings": 0,
+    "ruff": "PASS",
+    "behavior": "Evaluate CDF/SF only at nonnegative physical inputs; preserve shape, NaN, infinity and zero atom"
+  },
+  "independent_binding_run": {
+    "command": ".venv/Scripts/python.exe -B analysis/validate_alternative_comparison.py --output outputs/alternative_comparison",
+    "monitor": "mon_A21WPFKHWBYGNM1E",
+    "exit_code": 1,
+    "status": "INCOMPLETE",
+    "full_experiment_validated": false,
+    "elapsed_seconds": 14.1514634999985,
+    "PASS_groups": 17,
+    "FAIL_groups": 0,
+    "UNAVAILABLE_groups": ["full_saved_artifacts"],
+    "protected_files_unchanged": 60
+  },
+  "cleanup": "All repair and binding-validation processes exited; no temporary/server/browser resources created",
+  "remaining": "All-method saved predictions, fitted provenance, fair metrics and FULL independent validation remain pending"
+}

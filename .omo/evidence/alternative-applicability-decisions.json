@@ -1,0 +1,121 @@
+[
+  {
+    "family": 1,
+    "task": "Joint Gaussian BJP 방법의 실제 자료 적용성 판정하기",
+    "decision": "6432 mean/response strata nondegenerate; local annual24/30pairs; rain requires explicit censoring.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 2,
+    "task": "기후 CDF 혼합 수축 방법의 실제 적용성 판정하기",
+    "decision": "Local train-only climatology present; inner selection uses historical-only folds.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 3,
+    "task": "제한 anomaly MOS 상수분산 방법의 적용성 판정하기",
+    "decision": "Nonconstant predictors/responses in6432strata; full Normal/censored law, no point-only score.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 4,
+    "task": "Gamma CSG 강수 분포 방법의 실제 적용성 판정하기",
+    "decision": "Positive Gamma3023rain strata;193weekly zero-training gates. CSG attempts all3216rain strata.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 5,
+    "task": "고정 power censor 회귀 방법의 실제 적용성 판정하기",
+    "decision": "All3216rain strata nonnegative; four Gaussian/logistic sqrt/cuberoot support-aware variants.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 6,
+    "task": "Hurdle 발생 강도 방법의 실제 자료 적용성 판정하기",
+    "decision": "All3216rain strata have22+positive years; regularized occurrence prevents allwet separation.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 7,
+    "task": "검열 GEV Tweedie 방법의 실제 자료 적용성 판정하기",
+    "decision": "All3216rain strata support censored GEV and CP-Gamma Tweedie; numerical/tail proof required.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 8,
+    "task": "BMA 동등 가중 커널 방법의 자료 적용성 판정하기",
+    "decision": "Equal-weight kernels runnable without IDs; member/group-specific BMA gated on undocumented physical/group semantics. Named-model BMA prequential.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 9,
+    "task": "계수 부분 풀링 cyclic smoothing 방법의 적용성 판정하기",
+    "decision": "Safe product/variable pools present,192+weekly/144+monthly initial rows;24/30annual blocks, year-balanced loss.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 10,
+    "task": "추세 BJP ti detrend 방법의 실제 적용성 판정하기",
+    "decision": "Local annual time/paired mean inputs present; separate forecast/observation trends, moving rain censor boundary.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 11,
+    "task": "Ordinal ELR 범주 확률 방법의 실제 적용성 판정하기",
+    "decision": "Train-derived terciles available; coherent category-only probabilities, no fabricated continuous CRPS.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 12,
+    "task": "분포회귀 boosting GAMLSS 방법의 실제 적용성 판정하기",
+    "decision": "Safe pooled features available; GAMLSS/componentwise/NGBoost remain distinct algorithms with proper rain support.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 13,
+    "task": "QRF IDR 비모수 분포 방법의 실제 적용성 판정하기",
+    "decision": "QRF weighted observed laws and mean-order IDR feasible; order assumption and bounded tails declared.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 14,
+    "task": "DRN BQN 신경망 분포 방법의 실제 적용성 판정하기",
+    "decision": "Small pooled DRN/monotone BQN feasible; dependence-aware loss and deterministic training, no sample-size blanket gate.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 15,
+    "task": "Schaake ECC 잔차 copula 방법의 자료 적용성 판정하기",
+    "decision": "Schaake/coplanar residual PIT feasible with aligned annual/windows/paths; ECC/dECC physical identity gate remains closed.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 16,
+    "task": "다변량 BJP MBC OTC 방법의 실제 적용성 판정하기",
+    "decision": "Paired and path vectors present; proper MBJP plus frozen-map/prequential MBCp/r/n and explicit OTC/dOTC adaptations; dynamic comparability per key.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  },
+  {
+    "family": 17,
+    "task": "Bayesian finite member signal noise 방법의 적용성 판정하기",
+    "decision": "Both finite-member iid/known-covariance entries gated: no justified homogeneous iid or covariance law supplied; ordinary BJP unaffected.",
+    "evidence": ".omo/evidence/alternative-input-applicability.md; .omo/notepads/alternative-statistical-plan.md",
+    "scope": "Applicability only; no new fit or skill claim"
+  }
+]

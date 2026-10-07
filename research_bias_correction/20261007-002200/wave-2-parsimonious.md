@@ -1,0 +1,10 @@
+# Parsimonious final dossier
+
+Observer parsimonious;12variedEnglishqueries;2026-10-06. No files/resourcescreated.
+CurrentGaussian/censoredGaussianEMOS4parameters. MOS/meanvariance not a whollynewfamily; constrainedanomalyMOS orconstantvariance (d0) is nestedbaseline. Centers/climatologyfittrainingonly.
+Climatological/ridgeshrinkage reduces signal reliance; fullCDFmixture variance needs within/betweencomponents, notjustmeanblend. Bayesianregressionposteriorprediction differsfrompoint-fitEMOS. Noautomatic superiority.
+Coefficientpartialpooling/cyclicsmoothing withinvariable/product/comparableleadseason is candidate. Oneglobalpenaltybeforeindependentcomplexfits. Singleprovidedregion means regionhierarchy not available; do notinventregionalreplicates.
+Train-onlydetrend→QM/QDM→retrend conditionalondemonstrateddrift. Climateprojectiontrend-preservationpapersmechanismsnotoperationalforecastproof. Zhao2017warnsQMignoresforecast-observationconditionalrelation.
+PrimaryKharin2003DJF26winters,Landman2002southernAfrica9regionsMOS,Tippett2014finiteestimatedGaussianreliability,Kharin2017CanSIPS30years20memberssampling/smoothing,Siegert2016parameteruncertainty,Sansom2016limitedtraining.
+Source metadata correction: EMOS DOI10.1175/MWR2904.1 correct; earlierinvalid10.1198/016214505000000437 notused. Doblas2005canonicalDOI10.3402/tellusa.v57i3.14658 differsfromlegacyWileystring. Do notcountDOIaliases asindependentreplication.
+EXPAND: no newbroadlead; casehierarchy/penaltystrengthconditionalfutureexperiment; target exclusion/cutoffmandatory.

@@ -1,0 +1,11 @@
+{
+  "case_id": "20260831_1MON_W01_prcp",
+  "count_cache_entries": 2,
+  "fold_cache_entries": 2,
+  "known_input_key_changes": true,
+  "pooled_rows": 45756,
+  "schedule_seconds": 0.8165972999995574,
+  "schedule_tasks": 54,
+  "truth_sentinel_law_unchanged": true,
+  "workers_1_6_same_law": true
+}

@@ -1,0 +1,76 @@
+{
+  "capturedAt": "2026-10-06T23:29:06.842Z",
+  "engine": "omowright connectPipe owned Chrome headless, isolated task-owned profiles",
+  "sources": [
+    {
+      "label": "Requested MBCn URL (identity mismatch)",
+      "requestedURL": "https://esd.copernicus.org/articles/9/313/2018/",
+      "renderedURL": "https://esd.copernicus.org/articles/9/313/2018/",
+      "doi": "10.5194/esd-9-313-2018",
+      "identity": "Famien et al. 2018 CDF-t Africa paper; NOT Cannon MBCn",
+      "status": "live publisher source rendered",
+      "canonicalNote": "No rel=canonical found; requested/rendered URL retained",
+      "text": "requested-mbcn-url-rendered.txt",
+      "completeScreenshot": "requested-mbcn-url-fullpage-scaled.png",
+      "scale": 0.6,
+      "coverage": {
+        "width": 1425,
+        "height": 25663
+      },
+      "supplemental": "requested-mbcn-url-bottom.png",
+      "warning": "requested-mbcn-url-fullpage.png is original default fullPage attempt clamped at 16384 pixels; use scaled image for complete coverage. Rendered text captured before late figure layout growth; later screenshot includes full footer."
+    },
+    {
+      "label": "Correct Cannon MBCn",
+      "requestedURL": "https://doi.org/10.1007/s00382-017-3580-6",
+      "renderedURL": "https://link.springer.com/article/10.1007/s00382-017-3580-6",
+      "canonicalURL": "https://link.springer.com/article/10.1007/s00382-017-3580-6",
+      "doi": "10.1007/s00382-017-3580-6",
+      "identity": "Alex J. Cannon, Multivariate quantile mapping bias correction: an N-dimensional probability density function transform for climate model simulations of multiple variables, Climate Dynamics 50, 31-49 (2018); online published 25 March 2017",
+      "status": "live open-access publisher full text rendered",
+      "text": "cannon-mbcn-clean-rendered.txt",
+      "completeScreenshot": "cannon-mbcn-fullpage-scaled.png",
+      "scale": 0.3461830526644928,
+      "coverage": {
+        "width": 1425,
+        "height": 44774
+      },
+      "readableBands": [
+        "cannon-mbcn-band-1.png",
+        "cannon-mbcn-band-2.png",
+        "cannon-mbcn-band-3.png"
+      ],
+      "identityScreenshot": "cannon-mbcn-identity.png",
+      "warning": "Initial cannon-mbcn-fullpage.png is texture-clamped and includes cookie overlay. Clean capture rejects optional cookies only within task-owned profile. Some below-fold figure assets were not loaded in whole-page render; text and layout are captured."
+    },
+    {
+      "label": "Schefzik, Thorarinsdottir and Gneiting ECC (2013)",
+      "requestedURL": "https://doi.org/10.1214/13-STS443",
+      "renderedURL": "https://projecteuclid.org/journals/statistical-science/volume-28/issue-4/Uncertainty-Quantification-in-Complex-Simulation-Models-Using-Ensemble-Copula-Coupling/10.1214/13-STS443.full",
+      "canonicalURL": "https://projecteuclid.org/journals/statistical-science/volume-28/issue-4/Uncertainty-Quantification-in-Complex-Simulation-Models-Using-Ensemble-Copula-Coupling/10.1214/13-STS443.full",
+      "canonicalNote": "DOI-resolved publisher URL; article rel=canonical could not be inspected due security challenge",
+      "status": "ACCESS FAILURE: Incapsula additional security check / hCaptcha",
+      "text": "ecc-publisher-challenge-rendered.txt",
+      "completeScreenshot": "ecc-publisher-challenge-fullpage.png",
+      "warning": "Challenge screenshot is not paper content. No abstract or full-text verification claimed. CloakBrowser binary unavailable under C:/Users/user/.cloakbrowser; no user profile or cookies used."
+    }
+  ],
+  "inspection": "Personally viewed MBCn identity image, complete scaled source image, Famien complete scaled source image and footer supplement, and ECC challenge screenshot.",
+  "cleanup": {
+    "closedAt": "2026-10-06T23:29:06.842Z",
+    "browserCloseReturned": true,
+    "profiles": [
+      {
+        "path": "C:\\Users\\user\\AppData\\Local\\Temp\\omo-source-st01a1138f-8Qw4k6",
+        "existsAfterRemoval": false
+      },
+      {
+        "path": "C:/Users/user/AppData/Local/Temp/omo-source-st01a1138f-XBZ9hr",
+        "existsAfterRemoval": false
+      }
+    ],
+    "userProfileTouched": false,
+    "cookiesImported": false,
+    "kernelRecoveryNote": "Displaying first large image caused kernel state loss; process probe subsequently found no chrome.exe with initial task profile. Initial task profile removed after recovery."
+  }
+}

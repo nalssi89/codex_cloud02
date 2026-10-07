@@ -1,0 +1,159 @@
+{
+  "manualQa": {
+    "by": "main-session",
+    "status": "passed",
+    "evidence": "Lead personally executed and viewed final real-browser report surfaces; official validators and native Korean proofreading passed; qa-verdict.md has exact invocations, observations and cleanup.",
+    "surfaceEvidence": [
+      {
+        "id": "desktop-browser",
+        "criterionRef": "C001",
+        "surface": "browser",
+        "invocation": "omowright.connectPipe; open file:///D:/WORK/Projects/omo/Glosea6/research_bias_correction/20261007-002200/report.html; emulate1280x900; actualSource6/ProjectP1clicks withnativehashchange",
+        "verdict": "passed",
+        "artifactRefs": [
+          "desktop-pixels",
+          "qa-report",
+          "cli-proof"
+        ]
+      },
+      {
+        "id": "mobile-browser",
+        "criterionRef": "C002",
+        "surface": "browser",
+        "invocation": "emulate390x844; light/dark screenshot and fullDOMlayoutcheck,367expected/367actual copiedblocks",
+        "verdict": "passed",
+        "artifactRefs": [
+          "mobile-pixels",
+          "mobile-layout",
+          "qa-report"
+        ]
+      },
+      {
+        "id": "manifest-cli",
+        "criterionRef": "C003",
+        "surface": "cli",
+        "invocation": "node report-tools.mjs outcome verify --session-dir research_bias_correction/20261007-002200/",
+        "verdict": "passed",
+        "artifactRefs": [
+          "cli-proof",
+          "proofread",
+          "qa-report"
+        ]
+      }
+    ],
+    "adversarialCases": [
+      {
+        "id": "fragment-case-regression",
+        "criterionRef": "C001",
+        "scenario": "19uppercasefragmentlinkstolowercaseIDsinitiallyfailed",
+        "expectedBehavior": "allrealcitationtargetsresolve andclickedreferenceisvisible",
+        "verdict": "passed",
+        "artifactRefs": [
+          "qa-report",
+          "desktop-pixels"
+        ]
+      },
+      {
+        "id": "mobile-overflow",
+        "criterionRef": "C002",
+        "scenario": "17methodrowsandlongsourceURLsunder390px,includingdarkmode",
+        "expectedBehavior": "nohorizontalbodyoverflow/overlap/clipping;alltextretained",
+        "verdict": "passed",
+        "artifactRefs": [
+          "mobile-pixels",
+          "mobile-layout",
+          "qa-report"
+        ]
+      },
+      {
+        "id": "false-completion",
+        "criterionRef": "C003",
+        "scenario": "Failedretrievals,unmeasuredKoreanskill,liveprofiles orunresolvedlanguageerrorsmustnotbesoldascomplete",
+        "expectedBehavior": "scope-qualifiedmethodclaims,allinitiallanguageitemsresolved,28tasksterminal/profilesgone",
+        "verdict": "passed",
+        "artifactRefs": [
+          "qa-report",
+          "proofread",
+          "cli-proof"
+        ]
+      }
+    ],
+    "artifactRefs": [
+      {
+        "id": "desktop-pixels",
+        "kind": "browser-screenshot",
+        "description": "Lead viewed final1280desktopcorrectedBJPprose",
+        "path": "research_bias_correction/20261007-002200/assets/qa/final-desktop-bjp.png"
+      },
+      {
+        "id": "mobile-pixels",
+        "kind": "browser-screenshot",
+        "description": "Lead viewed corrected390mobileTweedieindarkmode",
+        "path": "research_bias_correction/20261007-002200/assets/qa/final-mobile-dark-tweedie.png"
+      },
+      {
+        "id": "mobile-layout",
+        "kind": "data-diff",
+        "description": "Final278boxesuntruncatedand0layoutdefects",
+        "path": "research_bias_correction/20261007-002200/boxes-mobile.json"
+      },
+      {
+        "id": "qa-report",
+        "kind": "manual-qa",
+        "description": "Actualreal-surfaceactions/copychecks/cleanupreceipts",
+        "path": "research_bias_correction/20261007-002200/qa-verdict.md"
+      },
+      {
+        "id": "proofread",
+        "kind": "review-report",
+        "description": "FullnativeKoreanreviewpluscleanfour-itemdelta",
+        "path": "research_bias_correction/20261007-002200/proofread-verdict.md"
+      },
+      {
+        "id": "cli-proof",
+        "kind": "cli-transcript",
+        "description": "ActualnodeCLIverifydecisiveoutputandexit0",
+        "path": "research_bias_correction/20261007-002200/cli-verification.txt"
+      }
+    ]
+  },
+  "gateReview": {
+    "by": "main-session (explicit self-review permitted by bare ulw-research without ulw-plan)",
+    "recommendation": "APPROVE",
+    "reportPath": "research_bias_correction/20261007-002200/final-gate-review.md",
+    "evidence": "Self-review offinalresearchartifact againstoriginalask,scope/source/QA/cleanup; notclaimedindependentcode-reviewapproval. Methodclaimsindependentlyattackedbyresearch/refinementteams.",
+    "blockers": [],
+    "notes": [
+      "No productionimplementationornewKoreanskillclaim; unknownarchive-rowprovenanceexplicit.",
+      "All4reportgatespassed; oldoriginalQCauditnotfreshscoreverification."
+    ]
+  },
+  "iteration": {
+    "fullRerun": true,
+    "status": "passed",
+    "rerunCommands": [
+      "functions.lsp_diagnostics({filePath:report.html})",
+      "rtools.runCheck([report.html,\"--design-spec\",design-spec.md,\"--layout\",boxes.json])",
+      "rtools.runCheck([report.html,\"--design-spec\",design-spec.md,\"--layout\",boxes-mobile.json])",
+      "RealChrome1280/390affectedparagraphrerender+all367semanticblocks;nativeKorean4-itemdeltareview",
+      "node report-tools.mjs outcome verify --session-dir research_bias_correction/20261007-002200/"
+    ],
+    "evidence": "Finalchecks0defects/exit0afterfour-lineproofreadingdelta;allaffectedpixelsviewed;unchangedsyntheticmechanismproofsretainvalidity;no productiontest/build claimed."
+  },
+  "criteriaCoverage": {
+    "totalCriteria": 9,
+    "passCount": 9,
+    "originalIntent": "Find otherbias-correctionmethods beyondQM/QDM/EMOS,includingJointGaussian,forcurrentGloSea6temperature/precipitation;pros/consandprojectapplicability,inaseparatedirectory.",
+    "desiredOutcome": "KoreanMarkdown/HTMLcomparisonwith17method/extensionrows,93sourceURLs,dataconstraintsandprioritizedexperiments;noinventedlocalperformancegains.",
+    "userOutcomeReview": "Deliverableiscomplete/readable/actionable:conditionalBJP/shrinkage/rain-distributionmenu,dependenceandMLgates,allrequestedpros/consandseparatedartifacts.Pixels/linkbehavior/wholecontentverified,workersterminal,cleanupcomplete.",
+    "adversarialClassesCovered": [
+      "provenance/availability",
+      "small-sample/non-independentmembers",
+      "zero/support/tails",
+      "sourceidentity/citation",
+      "responsiveoverflow/fragmentcase",
+      "falseefficacy/falsecompletion"
+    ]
+  }
+}
+

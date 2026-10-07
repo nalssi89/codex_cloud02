@@ -1,0 +1,9 @@
+{
+  "actual_saved_N_label_checked": true,
+  "actual_saved_table_figures": 16,
+  "model_or_data_smoke_rerun": false,
+  "scope": "REPORTING_REFINEMENT_NOT_FULL",
+  "source": "outputs\\alternative_reporting_smoke_verified_20261007\\reports",
+  "status": "PASS",
+  "terminal_state_rejections": 6
+}

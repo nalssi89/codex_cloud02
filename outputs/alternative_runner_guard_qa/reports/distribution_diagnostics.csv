@@ -1,0 +1,2 @@
+﻿case_id,method_id,PRODUCT,VARIABLE,seed,law_status,PIT,PIT_left,PIT_right,UPPER_RAIN_THRESHOLD,UPPER_RAIN_P,UPPER_RAIN_BRIER,CONTRACT_COVERAGE90,CONTRACT_WIDTH90,representation
+20220307_1MON_W01_t15m,climatology_empirical,1mon,t15m,20261007,OK,1.0,1.0,1.0,,,,0,5.7868663594470044,weighted_empirical

@@ -1,0 +1,7 @@
+﻿PRODUCT,VARIABLE,method_id,status,count,surface
+1mon,t15m,mbcp_annual,OK,1,joint_component_coverage_not_vector_score
+1mon,t15m,mbjp_niw,OK,1,joint_component_coverage_not_vector_score
+1mon,t15m,otc_annual,OK,1,joint_component_coverage_not_vector_score
+3mon,t15m,mbcp_annual,OK,1,joint_component_coverage_not_vector_score
+3mon,t15m,mbjp_niw,OK,1,joint_component_coverage_not_vector_score
+3mon,t15m,otc_annual,OK,1,joint_component_coverage_not_vector_score

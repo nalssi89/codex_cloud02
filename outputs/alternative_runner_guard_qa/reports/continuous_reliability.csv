@@ -1,0 +1,4 @@
+﻿PRODUCT,VARIABLE,method_id,surface,category,bin_low,bin_high,N,mean_probability,observed_frequency,bin_rule
+1mon,t15m,climatology_empirical,continuous,AN,0.3,0.4,1,0.3333333333333335,1.0,"fixed tenths, last includes 1; no target tuning"
+1mon,t15m,climatology_empirical,continuous,BN,0.3,0.4,1,0.3333333333333333,0.0,"fixed tenths, last includes 1; no target tuning"
+1mon,t15m,climatology_empirical,continuous,NN,0.3,0.4,1,0.3333333333333332,0.0,"fixed tenths, last includes 1; no target tuning"

@@ -1,0 +1,15 @@
+dataset_version: v1
+area: kma
+forecast_period: 20220301-20260831
+asos_available_requested: 19900101-20260831
+mapping_period: 1993-2022
+temperature_mapping: gaussian_dqm
+precipitation_mapping: empirical_qm
+mapping_hcst_source: hcst_mapping
+legacy_probability_source: hcst_legacy_probability
+legacy_probability_used_for_mapping: false
+temperature_hcst_restoration: source_year_asos_trend
+temperature_fcst_restoration: target_year_asos_trend
+anomaly_reference: mean_of_corrected_historical_hcst
+tercile_reference: p33_p66_of_corrected_historical_hcst
+known_leakage: evaluation years inside 1993-2022 are accepted by project decision

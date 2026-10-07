@@ -1,0 +1,17 @@
+{
+  "closedAt": "2026-10-06T23:29:06.842Z",
+  "browserCloseReturned": true,
+  "profiles": [
+    {
+      "path": "C:\\Users\\user\\AppData\\Local\\Temp\\omo-source-st01a1138f-8Qw4k6",
+      "existsAfterRemoval": false
+    },
+    {
+      "path": "C:/Users/user/AppData/Local/Temp/omo-source-st01a1138f-XBZ9hr",
+      "existsAfterRemoval": false
+    }
+  ],
+  "userProfileTouched": false,
+  "cookiesImported": false,
+  "kernelRecoveryNote": "Displaying first large image caused kernel state loss; process probe subsequently found no chrome.exe with initial task profile. Initial task profile removed after recovery."
+}
