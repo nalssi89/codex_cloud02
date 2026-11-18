@@ -8,3 +8,4 @@ __pycache__/
 cache/
 *.tmp
 *.log
+daily_forecast/site/
